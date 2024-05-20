@@ -1,0 +1,14 @@
+{
+	"name": "DWIngestionAzureSQLDBList",
+	"properties": {
+		"annotations": [],
+		"type": "AzureSqlDatabase",
+		"typeProperties": {
+			"server": "sql-rg-sterling-rabbit.database.windows.net",
+			"database": "DWIngestion",
+			"encrypt": "mandatory",
+			"trustServerCertificate": false,
+			"authenticationType": "SystemAssignedManagedIdentity"
+		}
+	}
+}
