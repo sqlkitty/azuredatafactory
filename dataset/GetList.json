@@ -1,0 +1,48 @@
+{
+	"name": "GetList",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "DWIngestionAzureSQLDBList",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "Id",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "DatabaseName",
+				"type": "varchar"
+			},
+			{
+				"name": "SchemaName",
+				"type": "varchar"
+			},
+			{
+				"name": "TableName",
+				"type": "varchar"
+			},
+			{
+				"name": "LoadType",
+				"type": "varchar"
+			},
+			{
+				"name": "DateAdded",
+				"type": "datetime",
+				"precision": 23,
+				"scale": 3
+			},
+			{
+				"name": "AddedBy",
+				"type": "varchar"
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "DWIngestionTableList"
+		}
+	}
+}
