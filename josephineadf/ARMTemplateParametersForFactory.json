@@ -4,12 +4,6 @@
 	"parameters": {
 		"factoryName": {
 			"value": "josephineadf"
-		},
-		"AzureSqlDatabase_properties_typeProperties_server": {
-			"value": "sql-rg-sterling-rabbit.database.windows.net"
-		},
-		"AzureSqlDatabase_properties_typeProperties_database": {
-			"value": "josephineadventureworks"
 		}
 	}
 }
