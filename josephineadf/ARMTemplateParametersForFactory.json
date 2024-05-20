@@ -10,6 +10,12 @@
 		},
 		"AzureDataLakeStorage_properties_typeProperties_url": {
 			"value": "https://josephinedatalake.dfs.core.windows.net/"
+		},
+		"DWIngestionAzureSQLDBList_properties_typeProperties_server": {
+			"value": "sql-rg-sterling-rabbit.database.windows.net"
+		},
+		"DWIngestionAzureSQLDBList_properties_typeProperties_database": {
+			"value": "DWIngestion"
 		}
 	}
 }

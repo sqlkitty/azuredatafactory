@@ -14,6 +14,14 @@
 		"AzureDataLakeStorage_properties_typeProperties_url": {
 			"type": "string",
 			"defaultValue": "https://josephinedatalake.dfs.core.windows.net/"
+		},
+		"DWIngestionAzureSQLDBList_properties_typeProperties_server": {
+			"type": "string",
+			"defaultValue": "sql-rg-sterling-rabbit.database.windows.net"
+		},
+		"DWIngestionAzureSQLDBList_properties_typeProperties_database": {
+			"type": "string",
+			"defaultValue": "DWIngestion"
 		}
 	},
 	"variables": {
@@ -33,6 +41,23 @@
 						"type": "SecureString",
 						"value": "[parameters('AzureDataLakeStorage_accountKey')]"
 					}
+				}
+			},
+			"dependsOn": []
+		},
+		{
+			"name": "[concat(parameters('factoryName'), '/DWIngestionAzureSQLDBList')]",
+			"type": "Microsoft.DataFactory/factories/linkedServices",
+			"apiVersion": "2018-06-01",
+			"properties": {
+				"annotations": [],
+				"type": "AzureSqlDatabase",
+				"typeProperties": {
+					"server": "[parameters('DWIngestionAzureSQLDBList_properties_typeProperties_server')]",
+					"database": "[parameters('DWIngestionAzureSQLDBList_properties_typeProperties_database')]",
+					"encrypt": "mandatory",
+					"trustServerCertificate": false,
+					"authenticationType": "SystemAssignedManagedIdentity"
 				}
 			},
 			"dependsOn": []
