@@ -4,6 +4,12 @@
 	"parameters": {
 		"factoryName": {
 			"value": "josephineadf"
+		},
+		"AzureDataLakeStorage_accountKey": {
+			"value": ""
+		},
+		"AzureDataLakeStorage_properties_typeProperties_url": {
+			"value": "https://josephinedatalake.dfs.core.windows.net/"
 		}
 	}
 }

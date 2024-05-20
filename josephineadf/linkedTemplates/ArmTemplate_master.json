@@ -7,13 +7,13 @@
 			"metadata": "Data Factory name",
 			"defaultValue": "josephineadf"
 		},
-		"AzureSqlDatabase_properties_typeProperties_server": {
-			"type": "string",
-			"defaultValue": "sql-rg-sterling-rabbit.database.windows.net"
+		"AzureDataLakeStorage_accountKey": {
+			"type": "secureString",
+			"metadata": "Secure string for 'accountKey' of 'AzureDataLakeStorage'"
 		},
-		"AzureSqlDatabase_properties_typeProperties_database": {
+		"AzureDataLakeStorage_properties_typeProperties_url": {
 			"type": "string",
-			"defaultValue": "josephineadventureworks"
+			"defaultValue": "https://josephinedatalake.dfs.core.windows.net/"
 		},
 		"containerUri": {
 			"type": "string",
@@ -42,11 +42,11 @@
 					"factoryName": {
 						"value": "[parameters('factoryName')]"
 					},
-					"AzureSqlDatabase_properties_typeProperties_server": {
-						"value": "[parameters('AzureSqlDatabase_properties_typeProperties_server')]"
+					"AzureDataLakeStorage_accountKey": {
+						"value": "[parameters('AzureDataLakeStorage_accountKey')]"
 					},
-					"AzureSqlDatabase_properties_typeProperties_database": {
-						"value": "[parameters('AzureSqlDatabase_properties_typeProperties_database')]"
+					"AzureDataLakeStorage_properties_typeProperties_url": {
+						"value": "[parameters('AzureDataLakeStorage_properties_typeProperties_url')]"
 					}
 				}
 			},

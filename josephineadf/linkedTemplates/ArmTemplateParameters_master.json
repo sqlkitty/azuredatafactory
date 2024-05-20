@@ -5,11 +5,11 @@
 		"factoryName": {
 			"value": "josephineadf"
 		},
-		"AzureSqlDatabase_properties_typeProperties_server": {
-			"value": "sql-rg-sterling-rabbit.database.windows.net"
+		"AzureDataLakeStorage_accountKey": {
+			"value": ""
 		},
-		"AzureSqlDatabase_properties_typeProperties_database": {
-			"value": "josephineadventureworks"
+		"AzureDataLakeStorage_properties_typeProperties_url": {
+			"value": "https://josephinedatalake.dfs.core.windows.net/"
 		},
 		"containerUri": {
 			"value": ""
